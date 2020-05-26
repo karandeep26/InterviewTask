@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">InterviewTask</string>
+    <string name="button_2">Button 2</string>
+    <string name="button_1">Button 1</string>
+    <string name="loading_text">Loading text</string>
+    <string name="no_image">No image</string>
+    <string name="content_description_image_one">image</string>
+</resources>
