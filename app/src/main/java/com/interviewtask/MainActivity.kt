@@ -17,20 +17,20 @@ import java.io.InterruptedIOException
 
 class MainActivity : AppCompatActivity() {
 
-    companion object {
+    private companion object {
         const val IMAGE_1 = "https://homepages.cae.wisc.edu/~ece533/images/airplane.png"
         const val IMAGE_2 = "https://homepages.cae.wisc.edu/~ece533/images/arctichare.png"
         const val TAG = "MainActivity"
     }
 
-    var serviceWorker1 = ServiceWorker("service_worker_1")
-    var serviceWorker2 = ServiceWorker("service_worker_2")
+    private val serviceWorker1 = ServiceWorker("service_worker_1")
+    private val serviceWorker2 = ServiceWorker("service_worker_2")
 
-    val binding: ActivityMainBinding by lazy {
+    private val binding: ActivityMainBinding by lazy {
         ActivityMainBinding.inflate(layoutInflater)
     }
 
-    val okHttpClient = OkHttpClient()
+    private val okHttpClient = OkHttpClient()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
